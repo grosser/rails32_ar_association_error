@@ -3,8 +3,9 @@ class Part < ActiveRecord::Base
   belongs_to :car
 
   before_create :foo
+  validate { car }
 
   def foo
-    puts "PART #{car.foo} -- #{car.object_id}"
+    puts "car.foo is #{car.foo} -- car.object_id is #{car.object_id}"
   end
 end
