@@ -5,6 +5,6 @@ class Part < ActiveRecord::Base
   before_create :foo
 
   def foo
-    puts car.object_id
+    puts "PART #{car.foo} -- #{car.object_id}"
   end
 end
