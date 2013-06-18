@@ -1,5 +1,5 @@
 class Car < ActiveRecord::Base
-  has_many :parts#, :inverse_of => :car # uncomment to fix
+  has_many :parts, :inverse_of => :car
 
   attr_accessor :foo
 

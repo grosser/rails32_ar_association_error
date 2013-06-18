@@ -5,4 +5,4 @@ c.foo = 111
 c.add_part
 c.save!
 
-puts (c.object_id == c.parts.first.car.object_id ? "SUCCESS" : "FAIL")
+puts (c.foo == c.parts.first.bar ? "SUCCESS" : "FAIL")
