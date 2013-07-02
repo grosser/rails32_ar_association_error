@@ -7,4 +7,8 @@ class Car < ActiveRecord::Base
   def add_part
     parts << Part.new(:car => self)
   end
+
+  def best_parts
+    parts.where("id > 1")
+  end
 end
